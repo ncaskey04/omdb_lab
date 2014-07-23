@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Movie Details</title>
+  </head>
+  <body>
+    <ul>
+  <!--  <%= JSON.stringify(movie) %>  -->
+
+      <li id="Title"><%= movie.Title %></li>
+      <li><%= movie.Year %></li>
+      <li><%= movie.Rated %></li>
+      <li><%= movie.Released %></li>
+      <li><%= movie.Runtime %></li>
+      <li><%= movie.Genre %></li>
+      <li><%= movie.Director %></li>
+      <li><%= movie.Writer %></li>
+      <li><%= movie.Actors %></li>
+      <li><%= movie.Plot %></li>
+      <li><%= movie.imdbRating %></li>
+
+      <img src="<%= movie.Poster %>"><br>
+
+      <button > Watch Later </button>
+
+    </ul>
+  </body>
+</html>

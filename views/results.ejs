@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Movie Search Results</title>
+  </head>
+  <body>
+
+  <h1> RESULTS </h1>
+    <ul>
+    	<% movieList.forEach(function (movie) { %>
+      <li> <a href="details/<%=movie.imdbID %>"><%= movie.Title %></a><br>
+           <%= movie.Year %><br>
+      </li>
+
+      <% }) %>
+    </ul>
+  </body>
+</html>
